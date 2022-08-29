@@ -5,8 +5,6 @@ import mongoose from 'mongoose'
 
 const app = express()
 dotenv.config()
-const port = process.env.PORT || 5000
-const mongoUri = process.env.MONGO_URI
 
 app.use(express.json())
 app.use(morgan('dev'))
@@ -17,7 +15,7 @@ app.get('/', (req, res) => {
 
 // DATABASE
 mongoose
-  .connect(mongoUri)
+  .connect(process.env.MONGO_URI)
   .then(() => {
     console.log('DB Connected...')
   })
@@ -25,4 +23,4 @@ mongoose
     console.log('DB Failed...')
   })
 
-app.listen(port, () => console.log('App Running...'))
+app.listen(process.env.PORT || 5000, () => console.log('App Running...'))
