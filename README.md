@@ -64,7 +64,7 @@ pages/Home.jsx
 function Home() {
   return (
     <>
-      <p className='underline'>In the name of of Allah the Merciful</p>
+      <p className='underline'>In the name of Allah the Merciful</p>
     </>
   )
 }
