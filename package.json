@@ -1,28 +1,16 @@
 {
-  "name": "mern-stack-init-project",
+  "name": "mern-stack-app-init",
   "version": "1.0.0",
-  "description": "MERN STACK APP",
+  "description": "",
   "type": "module",
   "main": "server.js",
   "scripts": {
     "start": "node server/server.js",
     "server": "nodemon server/server.js",
-    "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "npm start --prefix client",
+    "all": "concurrently \"npm run server\" \"npm run dev\""
   },
   "keywords": [],
   "author": "Ahmed Abdelfattah",
-  "license": "ISC",
-  "dependencies": {
-    "dotenv": "^16.0.1",
-    "express": "^4.18.1",
-    "jsonwebtoken": "^8.5.1",
-    "moment": "^2.29.4",
-    "mongoose": "^6.5.1",
-    "morgan": "^1.10.0"
-  },
-  "devDependencies": {
-    "concurrently": "^7.3.0",
-    "nodemon": "^2.0.19"
-  }
+  "license": "ISC"
 }

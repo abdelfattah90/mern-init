@@ -1,14 +1,85 @@
-# MERN stack project init
+# MERN stack app init
 
-### Install dependencies
+### Client
+
+#### React - vite - React router - Tailwindcss
 
 ```
-# Server deps
-npm install
-
-# Client deps
+npm create vite@latest client -- --template react
 cd client
 npm install
+npm i react-router-dom
+```
+
+Install tailwindcss
+
+```
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
+
+Configuration tailwind.config.js
+
+```
+content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+],
+```
+
+Add Tailwind and google fonts index.css
+
+```
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  font-family: 'Roboto', sans-serif;
+}
+```
+
+App.js
+
+```
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
+function App() {
+  return (
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home />} />
+        </Routes>
+      </BrowserRouter>
+    </>
+  )
+}
+export default App
+```
+
+Home.js
+
+```
+<p className="underline">In the name of of Allah the Merciful</p>
+```
+
+### Run client
+
+```
+npm run dev
+```
+
+##
+
+### Server
+
+```
+npm i express mongoose dotenv cors moment morgan
+```
+
+```
+npm i concurrently nodemon -D --save
 ```
 
 ### Run Server
@@ -17,14 +88,10 @@ npm install
 npm run server
 ```
 
-### Run Client
-
-```
-npm run client
-```
+##
 
 ### Run Server & Client Simultaneously
 
 ```
-npm run dev
+npm run all
 ```

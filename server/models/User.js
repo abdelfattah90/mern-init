@@ -18,20 +18,12 @@ const userSchema = new mongoose.Schema(
       type: Boolean,
       default: false,
     },
-    seenNotifications: {
-      type: Array,
-      default: [],
-    },
-    unseenNotifications: {
-      type: Array,
-      default: [],
-    },
   },
   {
     timestamps: true,
   }
 )
 
-const User = mongoose.model('users', userSchema)
+const User = mongoose.model('user', userSchema)
 
 export default User
