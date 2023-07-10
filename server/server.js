@@ -12,7 +12,7 @@ app.use(cors())
 app.use(morgan('dev'))
 
 app.get('/', (req, res) => {
-  res.send('In the name of of Allah the Merciful')
+  res.send('In the name of Allah the Merciful')
 })
 
 // DATABASE
