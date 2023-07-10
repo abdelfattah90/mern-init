@@ -58,10 +58,17 @@ function App() {
 export default App
 ```
 
-Home.js
+pages/Home.js
 
 ```
-<p className="underline">In the name of of Allah the Merciful</p>
+function Home() {
+  return (
+    <>
+      <p className='underline'>In the name of of Allah the Merciful</p>
+    </>
+  )
+}
+export default Home
 ```
 
 ### Run client
@@ -76,9 +83,6 @@ npm run dev
 
 ```
 npm i express mongoose dotenv cors moment morgan
-```
-
-```
 npm i concurrently nodemon -D --save
 ```
 
