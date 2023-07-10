@@ -58,7 +58,7 @@ function App() {
 export default App
 ```
 
-pages/Home.js
+pages/Home.jsx
 
 ```
 function Home() {
