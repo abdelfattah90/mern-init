@@ -39,6 +39,12 @@ Add Tailwind and google fonts index.css
 }
 ```
 
+.eslinetrc.cjs file , Add to 'rules'
+
+```
+'react/prop-types': 'off',
+```
+
 App.js
 
 ```
