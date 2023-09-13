@@ -1,6 +1,8 @@
-# MERN stack app init
+# MERN STACK APP INIT
 
-### Client
+## Express.js, Vite, Tailwindcss
+
+### Install Client
 
 #### React - vite - React router - Tailwindcss
 
@@ -77,7 +79,7 @@ function Home() {
 export default Home
 ```
 
-### Run client
+### RUN CLIENT
 
 ```
 npm run dev
@@ -85,14 +87,14 @@ npm run dev
 
 ##
 
-### Server
+### Install Server
 
 ```
 npm i express mongoose dotenv cors moment morgan
 npm i concurrently nodemon -D --save
 ```
 
-### Run Server
+### RUN SERVER
 
 ```
 npm run server
