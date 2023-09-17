@@ -1,8 +1,51 @@
-# MERN STACK APP INIT
+# MERN Stack App init
 
-## Express.js, Vite, Tailwindcss
+#
+
+### Install Server
+
+```
+npm i express mongoose dotenv cors moment morgan
+npm i concurrently nodemon -D --save
+```
+
+### RUN SERVER
+
+```
+npm run server
+```
+
+---
 
 ### Install Client
+
+#
+
+#### Next.js
+
+```
+npx create-next-app@latest
+```
+
+#
+
+### RUN CLIENT
+
+```
+npm run dev
+```
+
+#
+
+### Run Server & Client Simultaneously
+
+```
+npm run all
+```
+
+---
+
+## Or Use in client
 
 #### React - vite - React router - Tailwindcss
 
@@ -83,27 +126,4 @@ export default Home
 
 ```
 npm run dev
-```
-
-##
-
-### Install Server
-
-```
-npm i express mongoose dotenv cors moment morgan
-npm i concurrently nodemon -D --save
-```
-
-### RUN SERVER
-
-```
-npm run server
-```
-
-##
-
-### Run Server & Client Simultaneously
-
-```
-npm run all
 ```
