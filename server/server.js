@@ -3,8 +3,8 @@ import dotenv from 'dotenv'
 import cors from 'cors'
 import morgan from 'morgan'
 
-import route from './routes/route.js'
-import connectDB from './config/db.js'
+import route from './routes/index.route'
+import connectDB from './config/db.config'
 
 const app = express()
 dotenv.config()
