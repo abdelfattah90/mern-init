@@ -1,7 +1,5 @@
 # MERN Stack App init
 
-#
-
 ### Install Server
 
 ```
@@ -19,15 +17,22 @@ npm run server
 
 ### Install Client
 
-#
-
 #### Next.js
 
 ```
 npx create-next-app@latest
 ```
 
-#
+- Folder Structure:
+  - app/
+    - about/page.jsx
+      - Import files:
+        - import Navbar from '@/components/
+        - import Link from 'next/link'
+        - < Link href='/'>Home</ >
+  - components/
+    - Navbar.jsx
+  - page.js: HomePage
 
 ### RUN CLIENT
 
