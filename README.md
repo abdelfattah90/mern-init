@@ -34,6 +34,7 @@ npx create-next-app@latest
   - page.js: HomePage
   - layout.js: < Navbar />
     - import Navbar from '@/components/Navbar'
+  - .eslintrc.json: "extends": ["next", "next/core-web-vitals", "prettier"]
 
 ### RUN CLIENT
 
