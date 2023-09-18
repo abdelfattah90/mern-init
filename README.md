@@ -27,12 +27,13 @@ npx create-next-app@latest
   - app/
     - about/page.jsx
       - Import files:
-        - import Navbar from '@/components/
         - import Link from 'next/link'
         - < Link href='/'>Home</ >
   - components/
     - Navbar.jsx
   - page.js: HomePage
+  - layout.js: < Navbar />
+    - import Navbar from '@/components/Navbar'
 
 ### RUN CLIENT
 
